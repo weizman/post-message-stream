@@ -5,7 +5,7 @@ import {
 import { isValidStreamMessage } from '../utils';
 
 const getSource = Object.getOwnPropertyDescriptor(MessageEvent.prototype, 'source').get;
-const getOrigin = Object.getOwnPropertyDescriptor(Event.prototype, 'origin').get;
+const getOrigin = Object.getOwnPropertyDescriptor(MessageEvent.prototype, 'origin').get;
 const getTarget = Object.getOwnPropertyDescriptor(Event.prototype, 'target').get;
 
 interface WindowPostMessageStreamArgs {
